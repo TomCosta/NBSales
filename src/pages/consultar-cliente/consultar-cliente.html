@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Consulta de Clientes</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <!-- <ion-grid>
+      <ion-row>
+        <ion-col col-12 col-sm-9>
+            <ion-item>
+              <ion-label stacked>Consulta de Clientes</ion-label>
+              <ion-input type="text" placeholder="Pesquisar por Cód, Nome ou CPF/CNPJ"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-12 col-sm-3>
+            <button ion-button block color="primary"><ion-icon padding-right name="search"></ion-icon>Pesquisar</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid> -->
+    <ion-searchbar placeholder="Pesquisar por Cód, Nome ou CPF/CNPJ">
+      </ion-searchbar>
+    <!-- Lista de clientes estática -->
+    <ion-list inset>
+      <button ion-item text-wrap [navPush]="'DetalheClientePage'">
+        <p>Endereço: R DAS PEDRAS, 23 - Cidade: IPATINGA</p>
+        <span>Código Cliente: 10120378 / Nome: AÇONOBRE COM. VAREJ. FERRAG. LTDA / CNPJ/CPF: 08111941000295</span>
+      </button>
+    <button ion-item text-wrap [navPush]="'DetalheClientePage'">
+        <p>Endereço: R DAS PEDRAS, 23 - Cidade: IPATINGA</p>
+        <span>Código Cliente: 10120378 / Nome: AÇONOBRE COM. VAREJ. FERRAG. LTDA / CNPJ/CPF: 08111941000295</span>
+      </button>
+    <button ion-item text-wrap [navPush]="'DetalheClientePage'">
+        <p>Endereço: R DAS PEDRAS, 23 - Cidade: IPATINGA</p>
+        <span>Código Cliente: 10120378 / Nome: AÇONOBRE COM. VAREJ. FERRAG. LTDA / CNPJ/CPF: 08111941000295</span>
+      </button>
+    </ion-list>
+
+  </ion-content>
+  

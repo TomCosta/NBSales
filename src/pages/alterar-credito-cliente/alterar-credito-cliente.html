@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Alterar Crédito</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center>
+  <ion-searchbar placeholder="Pesquisar Cliente">
+  </ion-searchbar>
+
+  <ion-grid padding text-center>    
+    <ion-row responsive-sm>
+      <ion-col>
+        <ion-label text-right>Cliente:</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-label text-left>10120378</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row responsive-sm>
+      <ion-col>
+        <ion-label text-right>Nome:</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-label col-auto text-left>AÇONOBRE COM. VAREJ. FERRAG. LTDA</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row responsive-sm>
+      <ion-col>
+        <ion-label text-right>Limite Total:</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-label text-left>12345</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row responsive-sm>
+      <ion-col>
+        <ion-label text-right>Limite Individual:</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-label text-left>12345</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row responsive-sm>
+      <ion-col>
+        <ion-label text-right>Limite de Crédito:</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-input></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row responsive-sm>
+      <ion-col>
+        <ion-label text-right>Grupo de Responsáveis:</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-label text-left>12345</ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row responsive-sm>
+      <ion-col>
+        <ion-label text-right>Data da Verificação Seguinte:</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-input type="date" required></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row responsive-sm>
+      <ion-col>
+        <ion-label text-right>Classe Risco:</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-input required></ion-input>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab bottom right>
+    <button ion-fab (click)="alterarCredito()">
+      <ion-icon name="checkmark-circle"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>

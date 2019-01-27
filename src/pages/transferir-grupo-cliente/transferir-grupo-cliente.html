@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Transferir Grupo Responsável</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center>
+
+  <ion-searchbar placeholder="Pesquisar Cliente">
+  </ion-searchbar>
+
+  <ion-grid padding text-center>
+    <ion-row responsive-sm>
+      <ion-col>
+        <p>Cliente: <span>10120378</span></p>
+      </ion-col>
+    </ion-row>
+    <ion-row responsive-sm>
+      <ion-col>
+        <p>Nome: <span>AÇONOBRE COM. VAREJ. FERRAG. LTDA</span></p>
+      </ion-col>
+    </ion-row>
+    <ion-row responsive-sm>
+      <ion-col>
+        <p>Grupo Responsável Atual: <span>XPTO</span></p>
+      </ion-col>
+    </ion-row>
+    <ion-row responsive-sm>
+      <ion-col>
+        <p>Grupo Responsável Novo:</p>
+        <ion-item>
+          <ion-label>Classificação</ion-label>
+          <ion-select>
+            <ion-option></ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab bottom right>
+    <button ion-fab (click)="alterarGrupoCliente()">
+      <ion-icon name="checkmark-circle"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-content>

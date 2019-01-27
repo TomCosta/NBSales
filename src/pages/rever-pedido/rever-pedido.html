@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle><ion-icon name="menu"></ion-icon></button>
+    <ion-title>Carrinho Venda</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h4>2. Rever Pedido</h4>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 col-md-6>
+        <p><span padding-right text-capitalize>Cliente:</span>-</p>
+        <p><span padding-right text-capitalize>Entrega:</span>Entrega 1</p>
+      </ion-col>
+      <ion-col col-12 col-md-6>
+        <p><span padding-right text-capitalize>CPF/CNPJ:</span>78462364616</p>
+        <p>
+          <span padding-right text-capitalize>Forma de Pagamento:</span>Condição
+          1
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid text-center>
+    <ion-scroll scrollX style="min-height: 200px">
+      <ion-row>
+        <table datatable col-12>
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Produto</th>
+              <th>Preço</th>
+              <th>Qtde.</th>
+              <th>Unid.</th>
+              <th>Centro</th>
+              <th>Tipo Frete</th>
+              <th>Sub. Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <ion-select> <ion-option></ion-option> </ion-select>
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-row>
+    </ion-scroll>
+  </ion-grid>
+
+  <button ion-button icon-end [navPush]="'PagamentoPage'">
+    Etapa 3
+    <ion-icon name="arrow-forward"></ion-icon>
+  </button>
+</ion-content>

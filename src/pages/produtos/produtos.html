@@ -1,0 +1,125 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Produtos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-scroll scrollX padding style="height:160px">
+    <ion-list>
+      <button padding>
+        <ion-icon name="cube"></ion-icon>
+        <p>Categoria do Produto</p>
+      </button>
+      <button padding>
+        <ion-icon name="cube"></ion-icon>
+        <p>Categoria do Produto</p>
+      </button>
+      <button padding>
+        <ion-icon name="cube"></ion-icon>
+        <p>Categoria do Produto</p>
+      </button>
+      <button padding>
+        <ion-icon name="cube"></ion-icon>
+        <p>Categoria do Produto</p>
+      </button>
+      <button padding>
+        <ion-icon name="cube"></ion-icon>
+        <p>Categoria do Produto</p>
+      </button>
+    </ion-list>
+  </ion-scroll>
+
+  <ion-row responsive-sm>
+    <ion-col>
+      <ion-item>
+        <ion-label>Categoria:</ion-label>
+        <ion-select>
+          <ion-option></ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item>
+        <ion-label>Loja:</ion-label>
+        <ion-select>
+          <ion-option></ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-searchbar placeholder="Pesquisar Produto">
+      </ion-searchbar>
+    </ion-col>
+  </ion-row>
+  <ion-grid text-center>
+    <ion-scroll scrollX style="min-height: 200px">
+      <ion-row>
+        <table datatable col-12>
+          <thead>
+            <tr>
+              <th>Cód. Produto</th>
+              <th>Descrição</th>
+              <th>Preço</th>
+              <th>Estoque</th>
+              <th>Loja</th>
+              <th>Un. Medida</th>
+              <th>Grupo de Merc.</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td [navPush]="'DetalheProdutoPage'">10002</td>
+              <td [navPush]="'DetalheProdutoPage'">CINTO DE COURO</td>
+              <td [navPush]="'DetalheProdutoPage'">30,00</td>
+              <td [navPush]="'DetalheProdutoPage'">10</td>
+              <td [navPush]="'DetalheProdutoPage'">9607</td>
+              <td [navPush]="'DetalheProdutoPage'">PÇ</td>
+              <td [navPush]="'DetalheProdutoPage'">XPTO PRODUTOS</td>
+              <td [navPush]="'AdicionarPedidoPage'">
+                <ion-icon name="cart"></ion-icon>
+              </td>
+            </tr>
+            <tr>
+              <td [navPush]="'DetalheProdutoPage'">10002</td>
+              <td [navPush]="'DetalheProdutoPage'">CINTO DE COURO</td>
+              <td [navPush]="'DetalheProdutoPage'">30,00</td>
+              <td [navPush]="'DetalheProdutoPage'">10</td>
+              <td [navPush]="'DetalheProdutoPage'">9607</td>
+              <td [navPush]="'DetalheProdutoPage'">PÇ</td>
+              <td [navPush]="'DetalheProdutoPage'">XPTO PRODUTOS</td>
+              <td [navPush]="'AdicionarPedidoPage'">
+                <ion-icon name="cart"></ion-icon>
+              </td>
+            </tr>
+            <tr>
+              <td [navPush]="'DetalheProdutoPage'">10002</td>
+              <td [navPush]="'DetalheProdutoPage'">CINTO DE COURO</td>
+              <td [navPush]="'DetalheProdutoPage'">30,00</td>
+              <td [navPush]="'DetalheProdutoPage'">10</td>
+              <td [navPush]="'DetalheProdutoPage'">9607</td>
+              <td [navPush]="'DetalheProdutoPage'">PÇ</td>
+              <td [navPush]="'DetalheProdutoPage'">XPTO PRODUTOS</td>
+              <td [navPush]="'AdicionarPedidoPage'">
+                <ion-icon name="cart"></ion-icon>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-row>
+    </ion-scroll>
+  </ion-grid>
+
+  <ion-fab bottom right #fab>
+    <button ion-fab [navPush]="'AdicionarPedidoPage'">
+      <ion-icon name="cart"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-content>
